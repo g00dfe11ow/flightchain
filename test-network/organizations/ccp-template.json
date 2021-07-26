@@ -1,0 +1,49 @@
+{
+    "name": "test-network-${ORG}",
+    "version": "1.0.0",
+    "client": {
+        "organization": "${upperORG}",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "${ORG}": {
+            "mspid": "${upperORG}MSP",
+            "peers": [
+                "peer0.${ORG}.flight.com"
+            ],
+            "certificateAuthorities": [
+                "ca.${ORG}.flight.com"
+            ]
+        }
+    },
+    "peers": {
+        "peer0.${ORG}.flight.com": {
+            "url": "grpcs://localhost:${P0PORT}",
+            "tlsCACerts": {
+                "pem": "${PEERPEM}"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.${ORG}.flight.com",
+                "hostnameOverride": "peer0.${ORG}.flight.com"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "ca.${ORG}.flight.com": {
+            "url": "https://localhost:${CAPORT}",
+            "caName": "ca-${ORG}",
+            "tlsCACerts": {
+                "pem": ["${CAPEM}"]
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}

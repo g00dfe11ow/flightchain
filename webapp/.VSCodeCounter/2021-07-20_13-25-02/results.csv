@@ -1,0 +1,14 @@
+"filename", "language", "Go", "XML", "comment", "blank", "total"
+"/home/pillow/Desktop/flightchain/webapp/api/applicant.go", "Go", 223, 0, 27, 14, 264
+"/home/pillow/Desktop/flightchain/webapp/api/ping.go", "Go", 7, 0, 1, 3, 11
+"/home/pillow/Desktop/flightchain/webapp/blockchain/connect.go", "Go", 98, 0, 4, 20, 122
+"/home/pillow/Desktop/flightchain/webapp/blockchain/sdk.go", "Go", 57, 0, 15, 6, 78
+"/home/pillow/Desktop/flightchain/webapp/common/response.go", "Go", 17, 0, 0, 5, 22
+"/home/pillow/Desktop/flightchain/webapp/common/util.go", "Go", 49, 0, 2, 12, 63
+"/home/pillow/Desktop/flightchain/webapp/go.mod", "XML", 0, 8, 0, 3, 11
+"/home/pillow/Desktop/flightchain/webapp/main.go", "Go", 10, 0, 0, 3, 13
+"/home/pillow/Desktop/flightchain/webapp/model/model.go", "Go", 34, 0, 1, 7, 42
+"/home/pillow/Desktop/flightchain/webapp/ref/applicant.go", "Go", 129, 0, 7, 26, 162
+"/home/pillow/Desktop/flightchain/webapp/ref/smartcontract.go", "Go", 288, 0, 51, 56, 395
+"/home/pillow/Desktop/flightchain/webapp/router/router.go", "Go", 20, 0, 1, 4, 25
+"Total", "-", 932, 8, 109, 159, 1208
