@@ -1,0 +1,12 @@
+{
+    "id": "plan1",
+    "unit_or_individual": "fire",
+    "contact": "18012345678",
+    "aircraft": {
+        "nationality": "China",
+        "type": "波音747",
+        "number": 1,
+        "callsign": 115,
+        "registration": 5
+    }
+}
