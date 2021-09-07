@@ -13,7 +13,7 @@
 ***
 > ~~**注意：**每次重启网络时，要将`application-go`文件夹下个应用的`keystore`和`wallet`都删掉~~
 
-## TL；DR
+# TL；DR
 
 1. 进入`test-network`文件夹;  
 
@@ -139,3 +139,6 @@ Remove()                       ---> 删除index位置的字符串
 
 在`test-network`中的网络创建完成后，cd到`webapp`目录，即在`main.go`文件同级目录下，运行`go run main.go`启动后端，往相应的api接口发送请求即可使用；`test.json`中为一测试样例，可用于测试`CreatePlan`，其他的功能可以根据对应功能接收的参数进行修改。
 
+## 身份相关
+
+没有想好怎么切换，目前身份是通过，`webapp/blockchain/connect.go`中的`Init()`中的`ccpPath`来控制，如果更改身份，`populateWallet()`中生成钱包的地址也需要相应的修改。
