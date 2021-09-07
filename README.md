@@ -51,7 +51,7 @@
 ## `assert-transfer-basic-modified`
 
 ```bash
-─[pillow@ubuntu] - [~/Desktop/flightchain/asset-transfer-basic-modified] - [2021-09-07 01:48:43]
+┌─[pillow@ubuntu] - [~/Desktop/flightchain/asset-transfer-basic-modified] - [2021-09-07 01:48:43]
 └─[0] <git:(main ac88fda✱) > tree -L 2
 .
 ├── application-go        ---> 根据官方示例写的测试用application，有了`webapp`后可以说没用了
