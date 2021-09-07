@@ -25,9 +25,15 @@
 
    > 该命令会在上一步中创建好的通道上部署一个名为`plan`的chaincode  
 
-4. 在`test-network`中的网络创建完成后，cd到`webapp`目录，即在`main.go`文件同级目录下，运行`go run main.go`启动后端，往相应的api接口发送请求即可使用。
+4. 在`test-network`中的网络创建完成后，cd到`webapp`目录，即在`main.go`文件同级目录下，运行`go run main.go`启动后端，往相应的api接口发送请求即可使用；
 
-5. `test.json`中为一测试样例，可用于测试`CreatePlan`，其他的功能可以根据对应功能接收的参数进行修改。
+5. `test.json`中为一测试样例，可用于测试`CreatePlan`，其他的功能可以根据对应功能接收的参数进行修改；
+
+6. 关闭网络时，cd到`test-network`目录，然后`./network.sh down`；
+
+   **注意：该操作会把第2、3步创建的东西全部删除，下次启动网络时要重复上面的操作。**
+
+7. 删除`webapp`目录下的`wallet`和`keystore`文件夹，这两个文件夹为与创建的身份有关的内容，下次重启时身份已不同，因此需要重新创建。
 
 # 项目结构
 
